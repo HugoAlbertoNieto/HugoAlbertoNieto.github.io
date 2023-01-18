@@ -1,0 +1,208 @@
+/* ==== GENERAL STYLES ==== */
+
+body {
+  font-family: 'Bahnschrift Light', sans-serif; 
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  
+  .container {
+    justify-content:baseline;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+  }
+  
+  .btn-container {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;    
+  }
+
+  .container .btn-container {
+    justify-content:center;
+    display: flex;
+    position: absolute;
+    bottom: 10px;     
+  }
+
+  .gral-btn {
+    background-color: #42C0FB;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+  } 
+  
+  .gral-btn:hover{
+    background-color: white;
+    color: #42C0FB;
+    border-color: #42C0FB;
+    border-style: solid;
+    border-width: 1px;
+    cursor:pointer;
+  } 
+
+  /* ==== FULL SCREEN HEADER ==== */
+
+  .main-text-wrapper {
+    position: absolute;
+    left:0; 
+    top:calc(50vh - 190px);
+    right:0;
+    margin:auto;    
+    font-size:1.2rem;
+  }
+
+  .main-picture-wrapper {
+    position: absolute;
+    left:0; 
+    top: calc(50vh - 110px);
+    right:0;
+    margin:auto;    
+  }
+  
+  .main-picture {
+    border-radius: 50%;
+    width: 220px;
+  }
+
+  .cover {
+    background: url('media/banner.png') no-repeat center;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    color: hsla(0,0%,100%,.9);
+    font-family: 'Bahnschrift Light', sans-serif;
+    text-align: center;
+    display: table;
+  }
+  
+  .byline h2 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: .1rem;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+  }
+  
+  .byline h3 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+  
+  .headline {
+    position: absolute;
+    left:0; 
+    top:calc(50vh - 200px);
+    right:0;
+    margin:auto;    
+    font-size:1.2rem;
+  }
+  
+  @media screen and (min-width: 1224px) {
+  
+    .headline {
+      font-size: 1.2rem;
+    }
+  
+  }
+  
+  .tagline {
+    position: absolute;
+    left:0; 
+    top:calc(50vh - 155px);
+    right:0;
+    /*margin:auto;   */
+    font-family: 'Bahnschrift Light', sans-serif; 
+    font-size:1rem;
+  }
+
+  /* ==== CARD STYLES ==== */
+
+  .wrapper {
+    width: 100%;
+  }
+  
+  .row-card {
+    width: 100%;
+    text-align: center;
+    display: flex;    
+    justify-content: center;    
+  }
+  
+  .col-card {    
+    margin: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: #DFE5FF;
+    min-height: 300px;
+  }
+    
+  @media screen and (max-width: 2000px) {
+    .row-card {
+      display: inline-flex;      
+    }
+  
+    .col-card {
+      width: 30%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .row-card {
+      display: block;
+    }
+  
+    .col-card {
+      width: 100%;
+    }
+  }
+
+  .card-image {
+    width: 100px;
+    text-align: center; 
+    margin: auto;    
+  }
+
+  /* ==== ARTICLE STYLES ==== */
+  
+  section {
+    width: 85%;
+    margin: 7rem auto;
+  }
+
+  @media screen and (min-width: 1224px) {
+  
+  /*  section {
+      width: 80%;
+      margin: 10rem auto;
+    }*/
+  
+  }
+  
+  section h1 {
+    
+    font-family: 'Bahnschrift Light', sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    margin: 1rem 0;
+  }
+  
+  section p {
+    font-family: 'Bahnschrift Light', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 1rem 0;
+  }
